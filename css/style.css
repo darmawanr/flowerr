@@ -2,6 +2,9 @@
 * {
   font-family: "Poppins", cursive;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: azure;
   width: 100%;
@@ -53,22 +56,22 @@ body {
   animation-delay: 0.9s;
 }
 .greetings > span:nth-child(9) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 .greetings > span:nth-child(10) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 .greetings > span:nth-child(11) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 .greetings > span:nth-child(12) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 .greetings > span:nth-child(13) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 .greetings > span:nth-child(14) {
-  animation-delay: 1.4s;
+  animation-delay: 1.6s;
 }
 
 .description {
@@ -79,21 +82,33 @@ body {
 .button a {
   text-decoration: none;
   font-size: 1rem;
-  color: #111;
+  color: #39c6d6;
 }
 
 @media screen and (max-width: 574px) {
+  html {
+    font-size: 75%;
+  }
   .greetings {
     display: block;
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
+    flex-wrap: wrap;
   }
   .description {
     font-size: 1rem;
+    text-align: center;
+    flex-wrap: wrap;
   }
 
   .button a {
     font-size: 0.5rem;
+    color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
